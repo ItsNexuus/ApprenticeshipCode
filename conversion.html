@@ -10,25 +10,25 @@
             <a id="currencyConversion" href="conversion.html"> Currency Converter </a>
         </nav>
         
-        <input type="text" id="GBP"/>
+        <input type="text" id="GBP" value="0" onchange="gbpconv()"/>
         <label for="GBP"> Great British Pounds </label>
         <br> 
-        <input type="text" id="USD"/>
+        <input type="text" id="USD" value="0" onchange="usdconv()"/>
         <label for="USD"> US Dollars </label>
         <br>
-        <input type="text" id="EUR"/>
+        <input type="text" id="EUR" value="0" onchange="eurconv()"/>
         <label for="EUR"> Euros </label>
         <br>
-        <input type="text" id="BTC"/>
+        <input type="text" id="BTC" value="0" onchange="btcconv()"/>
         <label for="BTC"> Bitcoins </label>
         <br>
-        <input type="text" id="YEN"/>
+        <input type="text" id="YEN" value="0" onchange="yenconv()"/>
         <label for="YEN"> Japanese Yen </label>
         <br>
-        <input type="text" id="KRONE"/>
+        <input type="text" id="KRONE" value="0" onchange="kroneconv()"/>
         <label for="KRONE"> Danish Krone </label>
         <br>
-        <input type="text" id="AUD"/>
+        <input type="text" id="AUD" value="0" onchange="audconv()"/>
         <label for="AUD"> Australian Dollars </label>
         <br>
         
@@ -44,33 +44,69 @@
                 aud = document.getElementById("AUD");
             }
             
-            function gbp() {
-                
+            function gbpconv() {
+                usd.value = parseFloat(gbp.value) * 1.34;
+                eur.value = parseFloat(gbp.value) * 1.14;
+                btc.value = parseFloat(gbp.value) * 0.00033;
+                yen.value = parseFloat(gbp.value) * 150.72;
+                krone.value = parseFloat(gbp.value) * 8.48;
+                aud.value = parseFloat(gbp.value) * 1.71;
             }
             
-            function usd() {
-                
+            function usdconv() {
+                gbp.value = parseFloat(usd.value) * 0.75;
+                eur.value = parseFloat(usd.value) * 0.85;
+                btc.value = parseFloat(usd.value) * 0.00025;
+                yen.value = parseFloat(usd.value) * 112.46;
+                krone.value = parseFloat(usd.value) * 6.32;
+                aud.value = parseFloat(usd.value) * 1.27;
             }
             
-            function eur() {
-                
+            function eurconv() {
+                gbp.value = parseFloat(eur.value) * 0.88;
+                usd.value = parseFloat(eur.value) * 1.18;
+                btc.value = parseFloat(eur.value) * 0.00029;
+                yen.value = parseFloat(eur.value) * 132.33;
+                krone.value = parseFloat(eur.value) * 7.44;
+                aud.value = parseFloat(eur.value) * 1.49;
             }
             
-            function btc() {
-                
+            function btcconv() {
+                gbp.value = parseFloat(btc.value) * 3050.79;
+                usd.value = parseFloat(btc.value) * 4077.60;
+                eur.value = parseFloat(btc.value) * 3465.55;
+                yen.value = parseFloat(btc.value) * 458583.21;
+                krone.value = parseFloat(btc.value) * 25787.97;
+                aud.value = parseFloat(btc.value) * 5187.93;
             }
             
-            function yen() {
-                
+            function yenconv() {
+                gbp.value = parseFloat(yen.value) * 0.0066;
+                usd.value = parseFloat(yen.value) * 0.0089;
+                eur.value = parseFloat(yen.value) * 0.0076;
+                btc.value = parseFloat(yen.value) * 0.0000022;
+                krone.value = parseFloat(yen.value) * 0.06;
+                aud.value = parseFloat(yen.value) * 0.011;
             }
             
-            function krone() {
-                
+            function kroneconv() {
+                gbp.value = parseFloat(krone.value) * 0.12;
+                usd.value = parseFloat(krone.value) * 0.16;
+                eur.value = parseFloat(krone.value) * 0.13;
+                btc.value = parseFloat(krone.value) * 0.000039;
+                yen.value = parseFloat(krone.value) * 17.78;
+                aud.value = parseFloat(krone.value) * 0.20;
             }
             
-            function aud() {
-                
+            function audconv() {
+                gbp.value = parseFloat(aud.value) * 0.59;
+                usd.value = parseFloat(aud.value) * 0.79;
+                eur.value = parseFloat(aud.value) * 0.67;
+                btc.value = parseFloat(aud.value) * 0.00019;
+                yen.value = parseFloat(aud.value) * 88.57;
+                krone.value = parseFloat(aud.value) * 4.98;
             }
+            
         </script>
     </body>
 </html>
