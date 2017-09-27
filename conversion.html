@@ -4,23 +4,73 @@
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <title> Currency Converter </title>
     </head>
-    <body>
+    <body onload="init()">
         <nav id="navigation">
             <a id="homepage" href="index.html"> Homepage </a>
             <a id="currencyConversion" href="conversion.html"> Currency Converter </a>
         </nav>
         
-        <form id="CurrencyConversionForm" action="currencyConversion.php">
-            <input list="currencies" name="currencies">
-            <datalist id="currencies">
-                <option value="Pound to Dollar">
-                <option value="Pound to Euro">
-                <option value="Pound to Bitcoin">
-                <option value="Bitcoin to Pound">
-                <option value="Pound to Japanese Yen">
-                <option value="Pound to Danish Krone">
-            </datalist>
-            <input type="submit">
-        </form>
+        <input type="text" id="GBP"/>
+        <label for="GBP"> Great British Pounds </label>
+        <br> 
+        <input type="text" id="USD"/>
+        <label for="USD"> US Dollars </label>
+        <br>
+        <input type="text" id="EUR"/>
+        <label for="EUR"> Euros </label>
+        <br>
+        <input type="text" id="BTC"/>
+        <label for="BTC"> Bitcoins </label>
+        <br>
+        <input type="text" id="YEN"/>
+        <label for="YEN"> Japanese Yen </label>
+        <br>
+        <input type="text" id="KRONE"/>
+        <label for="KRONE"> Danish Krone </label>
+        <br>
+        <input type="text" id="AUD"/>
+        <label for="AUD"> Australian Dollars </label>
+        <br>
+        
+        <script>
+            var gbp, usd, eur, btc, yen, krone, aud;
+            function init() {
+                gbp = document.getElementById("GBP");
+                usd = document.getElementById("USD");
+                eur = document.getElementById("EUR");
+                btc = document.getElementById("BTC");
+                yen = document.getElementById("YEN");
+                krone = document.getElementById("KRONE");
+                aud = document.getElementById("AUD");
+            }
+            
+            function gbp() {
+                
+            }
+            
+            function usd() {
+                
+            }
+            
+            function eur() {
+                
+            }
+            
+            function btc() {
+                
+            }
+            
+            function yen() {
+                
+            }
+            
+            function krone() {
+                
+            }
+            
+            function aud() {
+                
+            }
+        </script>
     </body>
 </html>
