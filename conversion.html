@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <title> Currency Converter </title>
+    </head>
+    <body>
+        <nav id="navigation">
+            <a id="homepage" href="index.html"> Homepage </a>
+            <a id="currencyConversion" href="conversion.html"> Currency Converter </a>
+        </nav>
+        
+        <form id="CurrencyConversionForm" action="currencyConversion.php">
+            <input list="currencies" name="currencies">
+            <datalist id="currencies">
+                <option value="Pound to Dollar">
+                <option value="Pound to Euro">
+                <option value="Pound to Bitcoin">
+                <option value="Bitcoin to Pound">
+                <option value="Pound to Japanese Yen">
+                <option value="Pound to Danish Krone">
+            </datalist>
+            <input type="submit">
+        </form>
+    </body>
+</html>
