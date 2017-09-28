@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Importing the stylesheet and grabbing an external font, setting title -->
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <title> Web Application </title>
+        <!-- jQuery Script to display site information -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script> 
+            $(document).ready(function() {
+                $("#flip").click(function() {
+                   $("#panel").slideToggle("slow"); 
+                });
+            });
+        </script>
     </head>
     <body>
+        <!-- Navigation bar -->
         <nav id="navigation">
             <a id="homepage" href="index.html"> Homepage </a>
             <a id="currencyConversion" href="conversion.html"> Currency Converter </a>
         </nav>
+        
+        <!-- This section gives a brief overview as to what the page is about -->
         
         <p>
             This page is dedicated to displaying the selected current conversion rates as of 27/09/2017.
@@ -21,6 +35,11 @@
             The current Pound to Japanese Yen conversion rates are: £1 = 150.72yen. <br>
             The current Pound to Danish Krone conversion rates are: £1 = 8.48krone. <br>
             The current Pound to Australian Dollar conversion rates are: £1 = 1.71aud. <br>
+            The current Pound to Canadian Dollar conversion rates are: £1 = 1.67cad. <br>
         </p>
+        
+        <!-- Area where the panels for the website information are -->
+        <div id="flip"> Click to see website information. </div>
+        <div id="panel"> The website is a currency converter for the Pound, Dollar, Euro, Bitcoin, Japanese Yen, Danish Krone and Canadian Dollars.</div>
     </body>
 </html>

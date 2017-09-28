@@ -7,14 +7,66 @@ html {
 body {
     height: 100%;
     width: 100%;
-    padding: 0;
+    margin: 0;
+    background-color: cadetblue;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Main page style */
 
-#navigation {
-    width: 100%;
-    height: 56px;
+p {
+    font-size: 27.5px;
 }
 
-/* Style for the currency conversion */
+#navigation {
+    background-color: aqua;
+    width: 100%;
+    height: 39px;
+    display: inline-block;
+}
+
+#homepage {
+    display: inline-block;
+    float: left;
+    width: 132.5px;
+    height: 27.5px;
+    text-decoration: none;
+    background-color: blanchedalmond;
+    text-align: center;
+    padding-top: 5px;
+    border-style: solid;
+    color: darkgoldenrod;
+}
+
+#homepage:hover {
+    font-size: 20px;
+}
+
+#currencyConversion {
+    display: inline-block;
+    float: left;
+    width: 200px;
+    height: 27.5px;
+    text-decoration: none;
+    background-color: blanchedalmond;
+    text-align: center;
+    padding-top: 5px;
+    border-style: solid;
+    color: darkgoldenrod;
+}
+
+#currencyConversion:hover {
+    font-size: 20px;
+}
+
+#panel, #flip {
+    text-align: center;
+    background-color: blanchedalmond;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c3c3c3;
+}
+
+#panel {
+    display: none;
+}
