@@ -4,6 +4,15 @@
         <!-- Importing the stylesheet and grabbing the external font and sets the title -->
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <!-- jQuery Script to display site information -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script> 
+            $(document).ready(function() {
+                $("#flip").click(function() {
+                   $("#panel").slideToggle("slow"); 
+                });
+            });
+        </script>
         <title> Currency Converter </title>
     </head>
     <!-- States that on the load of the body to run the script -->
@@ -22,27 +31,35 @@
         
         <input type="text" id="GBP" value="0" onchange="gbpconv()"/>
         <label for="GBP"> Great British Pounds </label>
+        <img src="gbp.png" style="width:50px; height:25px;">
         <br> 
         <input type="text" id="USD" value="0" onchange="usdconv()"/>
         <label for="USD"> US Dollars </label>
+        <img src="usd.png" style="width:50px; height:25px;">
         <br>
         <input type="text" id="EUR" value="0" onchange="eurconv()"/>
         <label for="EUR"> Euros </label>
+        <img src="euro.png" style="width:50px; height:25px;">
         <br>
         <input type="text" id="BTC" value="0" onchange="btcconv()"/>
         <label for="BTC"> Bitcoins </label>
+        <img src="btc.png" style="width:50px; height:25px;">
         <br>
         <input type="text" id="YEN" value="0" onchange="yenconv()"/>
         <label for="YEN"> Japanese Yen </label>
+        <img src="yen.png" style="width:50px; height:25px;">
         <br>
         <input type="text" id="KRONE" value="0" onchange="kroneconv()"/>
         <label for="KRONE"> Danish Krone </label>
+        <img src="krone.png" style="width:50px; height:25px;">
         <br>
         <input type="text" id="AUD" value="0" onchange="audconv()"/>
         <label for="AUD"> Australian Dollars </label>
+        <img src="aud.png" style="width:50px; height:25px;">
         <br>
         <input type="text" id="CAD" value="0" onchange="cadconv()"/>
         <label for="CAD"> Canadian Dollars </label>
+        <img src="cad.png" style="width:50px; height:25px;">
         <br>
         
         <!-- JavaScript for the math of the currency conversions -->
@@ -139,5 +156,11 @@
             }
             
         </script>
+        
+        <div id="whiteArea">
+        <!-- Area where the panels for the website information are -->
+        <div id="flip"> Click to see website information. </div>
+        <div id="panel"> The website is a currency converter for the Pound, Dollar, Euro, Bitcoin, Japanese Yen, Danish Krone and Canadian Dollars.</div>
+        </div>
     </body>
 </html>

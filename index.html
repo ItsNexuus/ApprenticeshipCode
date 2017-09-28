@@ -5,15 +5,6 @@
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <title> Web Application </title>
-        <!-- jQuery Script to display site information -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script> 
-            $(document).ready(function() {
-                $("#flip").click(function() {
-                   $("#panel").slideToggle("slow"); 
-                });
-            });
-        </script>
     </head>
     <body>
         <!-- Navigation bar -->
@@ -38,8 +29,6 @@
             The current Pound to Canadian Dollar conversion rates are: £1 = 1.67cad. <br>
         </p>
         
-        <!-- Area where the panels for the website information are -->
-        <div id="flip"> Click to see website information. </div>
-        <div id="panel"> The website is a currency converter for the Pound, Dollar, Euro, Bitcoin, Japanese Yen, Danish Krone and Canadian Dollars.</div>
+        <footer> This page was made for a task for the Software Development Apprenticeship. It is a basic currency conversion app that uses a few currencies. The way that this works is through the use of JavaScript, and math equations using each of the currencies against eachother. It then displays in each box, from the currency selected, how much the inputted amount is in each of the currencies.</footer>
     </body>
 </html>
